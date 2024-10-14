@@ -68,17 +68,18 @@ Porte claquée: Intervention d'urgence pour «porte claquée».`,
           <div
             key={formule.id}
             onClick={() => handleClick(formule)}
-            className="p-6 bg-white shadow-md rounded-lg cursor-pointer hover:shadow-lg transition transform hover:-translate-y-1 backdrop-blur-lg bg-gradient-to-r from-[#00A4A2] to-[#64B34D] bg-opacity-30"
+            className="p-6 shadow-md rounded-lg cursor-pointer hover:shadow-lg transition transform hover:-translate-y-1 backdrop-blur-lg bg-gradient-to-r from-[#00A4A2] to-[#64B34D] bg-opacity-30 text-white"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
           >
             <h3 className="text-2xl font-bold mb-4">{formule.title}</h3>
-            <p className="text-gray-600">Prix: {formule.price}</p>
+            <p className="text-gray-200">Prix: {formule.price}</p>
             <div className="flex space-x-4 mt-4">
               {formule.icons.map((icon, index) => (
                 <img
                   key={index}
                   src={icon.src}
                   alt={formule.title}
-                  className="w-10 h-10"
+                  className="w-8 h-8" // Tailles réduites pour les SVG
                 />
               ))}
             </div>
