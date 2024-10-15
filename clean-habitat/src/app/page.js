@@ -16,6 +16,14 @@ import ShuttersIcon from "./assets/shutters-icon.svg";
 import WaterDamageIcon from "./assets/water-damage-icon.svg";
 import JointsIcon from "./assets/joints-icon.svg";
 import DoorIcon from "./assets/door-icon.svg";
+import BPlumbingIcon from "./assets/BPlumbingIcon.svg";
+import BElectricityIcon from "./assets/BElectricityIcon.svg";
+import BLightbulbIcon from "./assets/BLightbulbIcon.svg";
+import BWindowsIcon from "./assets/BWindowsIcon.svg";
+import BShuttersIcon from "./assets/BShuttersIcon.svg";
+import BWaterDamageIcon from "./assets/BWaterDamageIcon.svg";
+import BJointsIcon from "./assets/BJointsIcon.svg";
+import BDoorIcon from "./assets/BDoorIcon.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +82,7 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="flex items-start">
                 <img
-                  src={PlumbingIcon.src}
+                  src={BPlumbingIcon.src}
                   alt="Plomberie"
                   className="w-16 h-16"
                 />
@@ -91,7 +99,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={LightbulbIcon.src}
+                  src={BLightbulbIcon.src}
                   alt="Ampoules Usagées"
                   className="w-16 h-16"
                 />
@@ -107,7 +115,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={ShuttersIcon.src}
+                  src={BShuttersIcon.src}
                   alt="Volets Stores"
                   className="w-16 h-16"
                 />
@@ -124,7 +132,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={WindowsIcon.src}
+                  src={BWindowsIcon.src}
                   alt="Fenêtres"
                   className="w-16 h-16"
                 />
@@ -143,7 +151,7 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="flex items-start">
                 <img
-                  src={ElectricityIcon.src}
+                  src={BElectricityIcon.src}
                   alt="Électricité"
                   className="w-16 h-16"
                 />
@@ -160,7 +168,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={WaterDamageIcon.src}
+                  src={BWaterDamageIcon.src}
                   alt="Dégât des Eaux"
                   className="w-16 h-16"
                 />
@@ -177,7 +185,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={JointsIcon.src}
+                  src={BJointsIcon.src}
                   alt="Rénovation des Joints"
                   className="w-16 h-16"
                 />
@@ -194,7 +202,7 @@ export default function HomePage() {
 
               <div className="flex items-start">
                 <img
-                  src={DoorIcon.src}
+                  src={BDoorIcon.src}
                   alt="Porte Claquée"
                   className="w-16 h-16"
                 />

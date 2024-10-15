@@ -40,11 +40,14 @@ export default function RootLayout({ children }) {
               <Link href="/" className="hover:text-teal-500">Accueil</Link>
               <a href="#services" className="hover:text-teal-500">Services</a> {/* Lien vers la section */}
               <a href="#about" className="hover:text-teal-500">À propos</a>
-              <a href="#contact" className="hover:text-teal-500">Contact</a>
+              <Link href="/contact" className="hover:text-teal-500">Contact</Link> {/* Lien vers la nouvelle page de contact */}
             </nav>
           </div>
         </header>
-        <main className="mt-20">{children}</main>
+
+        <main className="mt-20">
+          {children}
+        </main>
       </body>
     </html>
   );
