@@ -1,7 +1,9 @@
- /** @type {import('next').NextConfig} */
- const nextConfig = {
-    output: 'standalone', // Important pour la compatibilité avec certains environnements d'hébergement
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export', // Important for static export compatibility
+    images: {
+      unoptimized: true, // Disable Next.js image optimization when exporting statically
+    },
   };
   
-
-export default nextConfig;
+  export default nextConfig;
