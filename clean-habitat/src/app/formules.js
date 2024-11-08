@@ -62,7 +62,6 @@ Porte claquée: Intervention d'urgence pour «porte claquée».`,
 
   return (
     <div className="container mx-auto px-4 py-20">
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {formules.map((formule) => (
           <div
@@ -73,13 +72,13 @@ Porte claquée: Intervention d'urgence pour «porte claquée».`,
           >
             <h3 className="text-2xl font-bold mb-4">{formule.title}</h3>
             <p className="text-gray-200">Prix: {formule.price}</p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex flex-wrap space-x-4 mt-4">
               {formule.icons.map((icon, index) => (
                 <img
                   key={index}
                   src={icon.src}
                   alt={formule.title}
-                  className="w-8 h-8" // Tailles réduites pour les SVG
+                  className="w-8 h-8 m-1" // Ajustement pour responsive
                 />
               ))}
             </div>
@@ -89,7 +88,7 @@ Porte claquée: Intervention d'urgence pour «porte claquée».`,
 
       {selectedFormule && (
         <div
-          className="mt-12 p-6 bg-gray-100 rounded-lg shadow-lg formule-description"
+          className="mt-12 p-6 bg-gray-100 rounded-lg shadow-lg formule-description transition-opacity duration-500"
           style={{ opacity: 0 }}
         >
           <h3 className="text-2xl font-bold mb-4">{selectedFormule.title}</h3>

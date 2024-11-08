@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import cleanHabitatLogo from "./assets/CleanHabitatLogo.svg";
 import savLogo from "./assets/SAV.svg";
 
@@ -23,6 +24,24 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="fr">
+      <Head>
+        <title>Clean Habitat - Services de nettoyage et entretien</title>
+        <meta
+          name="description"
+          content="Clean Habitat offre des services d'entretien, de nettoyage et de plomberie de qualité. Nous nous engageons à maintenir votre habitat propre et en bon état."
+        />
+        <meta name="keywords" content="nettoyage, entretien, plomberie, services, Clean Habitat" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Clean Habitat - Services de nettoyage et entretien" />
+        <meta property="og:description" content="Découvrez nos services de nettoyage, entretien et plomberie pour un habitat propre et bien entretenu." />
+        <meta property="og:url" content="https://cleanhabitatsolutions.com" />
+        <meta property="og:type" content="website" />
+        
+        {/* Lien vers le favicon */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
+
       <body className="antialiased">
         <header className="bg-white backdrop-blur-md bg-opacity-80 fixed top-0 w-full z-10 shadow-md">
           <div className="container mx-auto px-4 flex justify-between items-center py-4">
@@ -35,7 +54,6 @@ export default function RootLayout({ children }) {
               />
             </Link>
 
-            {/* Logo SAV centré */}
             <div className="flex justify-center flex-grow relative group">
               <Link
                 href="https://www.economie.gouv.fr/cedef/services-a-la-personne"
